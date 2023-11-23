@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>scr="./main.js"</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip_Functions</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <script>
+
+        /*
+        //Global vs Local Variable
+        var miNombre = "Nora";
+
+       function mostrarMiNombre(){
+            var miNombre = "Gino";
+            console.log(miNombre);
+       }
+       mostrarMiNombre();
+
+       console.log(miNombre);
+
+       //return a Value:
+       function sum (a, b) {
+        return a + b;
+       }
+       var results = sum(5, 3);
+       console.log(results);
+
+    function createCharacterGoal (programmingLanguage){
+        return "Mi goal is to learn " + programmingLanguage;
+    }
+    
+    var myGoal = createCharacterGoal("JavaScript"); //Return a value assigned to a variabe, in this case the var myGoal. 
+    console.log(myGoal);
+ 
+    //Data Structures - Queue. 
+    function nextOnTheList( array, element){
+        array.push(element); //Add to the end of the array
+        return array.shift(); //Remove the first element of the array
+    }
+    var myarray = [1, 2, 3, 4, 5];
+    
+    console.log("Before : " + JSON.stringify(myarray));
+
+    console.log(nextOnTheList(myarray, 6));
+
+    console.log("After: " + JSON.stringify(myarray));
+
+    //Booleans Values: (True) & (False) 
+
+    console.log(true);
+    console.log(false);
+
+
+    //Equal Operator:
+    console.log(5 == 5);
+    console.log("Hello" == "Hello");
+    console.log("Hello" == "hello");
+    console.log([1, 2, 3] == [1, 2, 3]); //This operator is not used to compare arrays, this return a False results
+
+    //Operator of strict equality (===)
+    console.log(9 == 9);
+    console.log(9 == "9");
+
+    console.log(9 === 9); //True
+    console.log(9 === "9"); // False
+
+    //Practive laboratory 
+    var a;
+    var b;
+
+    a = 5;
+    b = 5;
+
+    console.log(a == b); //true 
+    console.log(a === b); //true 
+
+    b = 8;
+
+    console.log(a == b);
+    console.log(a === b);
+
+    b = "5";
+
+    console.log(a == b); //true
+    console.log(a === b); //false
+
+    a = "JavaScript";
+    b = "JavaScript";
+
+    console.log(a == b);
+    console.log(a === b);
+
+    //Operator != 
+    console.log(9 != 6); //true
+    console.log(9 != 9); //false 
+
+    console.log("JavaScript" != "JavaScript"); //false
+
+    console.log([1, 2, 3] != [1, 2, 3]);
+
+    //Operator !==
+    console.log(1 != "1"); //false 
+    console.log(1 !== "1"); //true
+
+    //Operator more than >
+    console.log(6 > 5); //true 
+    console.log(3 > 10) //false 
+
+    console.log( "B" > "A"); //true 
+    console.log("ACB" > "ABC") //true
+
+    console.log("AB" > "A") //true due to the the first string has move characters 
+    console.log("Mundo" > "Hola"); //true due the alfabetic order
+    console.log("M" > "H");
+
+    var a = 15;
+    var b = 7;
+
+    console.log(a > b);
+    console.log(b > a);
+
+    //Operator >=
+    console.log(5 > 5); //false 
+    console.log(5 >= 5); //true
+
+    //Operator <
+
+    console.log (5 < 6); //true
+    console.log(10 < 3); //true
+
+    console.log("A" < "B"); //true 
+    console.log("ABC" < "ACB"); //true
+
+    var a = 15;
+    var b = 7;
+
+    console.log(a < b); //false 
+
+    console.log(b < a);//true
+
+    //Operator <=
+    console.log(5 < 5); //false
+    console.log(5 <= 5); //true
+    */
+    
+    //Logical Operators: AND for X && Y 
+
+    console.log(true && true);
+    console.log(true && false);
+    console.log(false && true);
+    console.log(false && false);
+
+    //Coding some conditions
+    var a = 8;
+
+    console.log((a > 5) && (a < 10)); //true 
+
+    a = 15;
+
+    console.log((a > 5) && (a < 10)); //false due to both elements should be true.
+
+    a = 1;
+    console.log((a > 5) && (a < 10)); // false
+
+    //Logic Operator (or) ||: 
+
+    console.log(true || true);
+    console.log(true || false);
+    console.log(false || true);
+    console.log(false || false);
+
+    var a = 8;
+
+    console.log((a < 5) || (a > 15)); //false
+
+    a = 2;
+    console.log((a < 5) || (a > 15)); //true
+
+    a = 20;
+    console.log((a < 5) || (a > 15)); //true
+
+    a = 5;
+    console.log((a == 5) || (a < 15)); //True
+
+    //Logical Operator "Not"
+
+    console.log(!true);
+    console.log(!false);
+
+    var a =8;
+
+    console.log(!(a >5)); //false
+    console.log(!(a < 5)); //true
+
+
+    //Condicionals to get control. 
+
+    if (true) {
+        console.log("The condition is true");
+
+    }
+
+
+    var x = 5;
+    if ((x > 2) && (x < 10)) {
+        console.log("This conditions is also true")
+    }
+
+    //Weather Seasons 
+    var weatherSeason = "Summer";
+
+    if (weatherSeason == "Winter") {
+        console.log("Yes! I love the winter season of the year");
+    }
+
+    console.log("After the conditional...");
+    
+
+//Else
+var x = 5;
+
+if (x < 2) {
+    console.log("The conditions is true");
+}else {
+    console.log("The conditions is false");
+}
+
+//Weather season using the condition if with the else clause
+
+var season = "Winter"
+
+if (season === "Summer"){
+    console.log("The Summer started. We can go to the beach");
+}else {
+    console.log("I really need the summer to go to the beach");
+}
+
+//Else if conditions 
+function clasifyValue (value){
+    if (value % 2 == 0){
+        console.log("This element is divisible by 2");
+
+    }else if (value % 3 == 0 ){
+        console.log ("This number is divisible by 3");
+
+    }
+    
+    else{
+        console.log("This element is not divisible with the options.");
+    }
+}
+clasifyValue(2);
+clasifyValue(15);
+clasifyValue(7);
+
+//Testing 
+function clasificarValor (valor) {
+    if (valor % 2 == 0) {
+        console.log("El valor es divisible con el 2");
+
+    } else if (valor % 3 == 0) {
+        console.log("El valor es divisble por 3");
+ 
+    } else {
+        console.log("No se cumple ninguna de las condiciones");
+    }
+} 
+
+clasificarValor(2);
+clasificarValor(9);
+clasificarValor(25);
+
+
+//Conditional of Logic Order
+function classifyingValue (value) {
+    if ( value < 5) {
+    console.log("The value is less than 5.");
+
+    } else if (value < 10) {
+    console.log("The value is less than 10")
+
+    } else {
+        console.log("The value is equal or greater than 10.")
+    }
+} 
+
+classifyingValue(15);
+
+//More than one if else statement
+function interpretBIM (bodyIndexMass){
+    if (bodyIndexMass < 18.5) {
+        console.log("Low body mass weight");
+    } else if (bodyIndexMass <= 24.9) {
+        console.log("Normal Body Mass Index");
+    } else if (bodyIndexMass <= 29.9) {
+        consolog.log("Your Body Index Mass is overweight");
+    } else {
+        console.log("You have obesity, please consult a doctor ass soon as possible");
+    }
+}
+
+interpretBIM(31.2);
+    
+//Golf Code
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    </script>
+    
+</body>
+</html>
